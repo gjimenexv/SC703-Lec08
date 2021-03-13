@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Lec08</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="menu_sound">Sonidos</string>
+    <string name="bt_gato">Gato</string>
+    <string name="bt_leon">Leon</string>
+    <string name="bt_play">Play</string>
+    <string name="bt_pause">Pausa</string>
+    <string name="bt_cont">Continuar</string>
+    <string name="bt_stop">Detener</string>
+    <string name="bt_Ciclo">Circular</string>
+
+
+    <string name="menu_phone">Llamadas/sms</string>
+    <string name="tv_marcar">Marcar</string>
+    <string name="tv_llamar">Llamar</string>
+
+    <string name="menu_map">Google Map</string>
+    <string name="tv_latitud">Latitud</string>
+    <string name="tv_longitud">Longitud</string>
+    <string name="tv_zoom">Zoom</string>
+
+    <string name="menu_web">Web</string>
+
+    <string name="menu_mail">Correo</string>
+    <string name="tv_to">Correo</string>
+    <string name="tv_subject">Asunto</string>
+    <string name="tv_message">mensaje</string>
+
+    <string name="menu_calendar">Calendario</string>
+    <string name="tv_titulo">Título</string>
+    <string name="tv_ubicacion">Ubicacion</string>
+    <string name="tv_fecha">Fecha</string>
+    <string name="tv_todo_dia">Todo el Día</string>
+    <string name="tv_h_ini">Inicia</string>
+    <string name="tv_h_fin">Termina</string>
+    <string name="bt_crear">Crear evento</string>
+
+    <string name="menu_location">Ubicacion</string>
+    <string name="tv_altura">Altura</string>
+
+    <string name="menu_camara">Cámara</string>
+</resources>
