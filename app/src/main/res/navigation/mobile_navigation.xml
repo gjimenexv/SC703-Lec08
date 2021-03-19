@@ -40,4 +40,10 @@
         android:name="com.example.lec08.Web"
         android:label="@string/menu_web"
         tools:layout="@layout/fragment_web" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.lec08.Calendar"
+        android:label="@string/menu_calendar"
+        tools:layout="@layout/fragment_calendar" />
 </navigation>
