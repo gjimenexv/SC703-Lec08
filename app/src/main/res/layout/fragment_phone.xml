@@ -7,20 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".Phone">
 
-    <TextView
+    <EditText
         android:id="@+id/etTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:ems="10"
+        android:hint="Número teléfono"
+        android:inputType="textPersonName" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,11 +42,13 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
+        <EditText
             android:id="@+id/etSms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:ems="10"
+            android:hint="Mensaje"
+            android:inputType="textPersonName" />
 
         <LinearLayout
             android:layout_width="match_parent"
