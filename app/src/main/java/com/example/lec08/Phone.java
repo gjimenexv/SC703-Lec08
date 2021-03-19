@@ -15,18 +15,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class Phone extends Fragment implements View.OnClickListener  {
 
-    private TextView etSms;
-    private TextView etTelefono;
-    private Button bt_llamar;
-    private Button bt_llamar_directo;
-    private Button bt_sms;
-    private Button bt_sms_directo;
+    private EditText etSms;
+    private EditText etTelefono;
+    private ImageButton bt_llamar;
+    private ImageButton bt_llamar_directo;
+    private ImageButton bt_sms;
+    private ImageButton bt_sms_directo;
 
     public View onCreateView(@NonNull LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
 
@@ -40,12 +42,11 @@ public class Phone extends Fragment implements View.OnClickListener  {
         bt_sms = root.findViewById(R.id.bt_sms);
         bt_sms_directo = root.findViewById(R.id.bt_sms_directo);
 
-
+        //Listener
         bt_llamar.setOnClickListener(this);
         bt_llamar_directo.setOnClickListener(this);
         bt_sms.setOnClickListener(this);
         bt_sms_directo.setOnClickListener(this);
-
 
         return root;
 
@@ -127,10 +128,10 @@ public class Phone extends Fragment implements View.OnClickListener  {
 
         //=== código para enviar un mensaje de texto tipo SMS directo ===  se debe validar si se requiere algo adicional en el manifest.xml
 
-        String sms = etSms.getText().toString();
+        String telefono = etTelefono.getText().toString();
         String texto = etSms.getText().toString();
         SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage(sms, null, texto, null, null);
+        smsManager.sendTextMessage(telefono, null, texto, null, null);
         Toast.makeText(getContext(), "SMS enviado.", Toast.LENGTH_LONG).show();
 
     }
