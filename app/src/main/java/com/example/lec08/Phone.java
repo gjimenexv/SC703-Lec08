@@ -28,11 +28,8 @@ public class Phone extends Fragment implements View.OnClickListener  {
     private Button bt_sms;
     private Button bt_sms_directo;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
     public View onCreateView(@NonNull LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
         View root = inflater.inflate(R.layout.fragment_phone, container, false);
 
         etTelefono = root.findViewById(R.id.etTelefono);
